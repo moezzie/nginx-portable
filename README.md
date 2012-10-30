@@ -11,6 +11,7 @@ What did i have in min when working on this project
 ## Installation
 1. Clone this repository
 2. Run `cd nginx-portable` and then `sudo nginx start`
+3. Fire up your favorite browser and go to `http://localhost:8080`
 
 Congratulations, your nginx server is up and running.
 
