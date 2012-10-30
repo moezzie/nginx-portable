@@ -4,6 +4,12 @@ nginx-portable
 nginx-portable is a portable version of the nginx web server for linux.  
 At this point in time the package only contains nginx-1.2.4, so no fastcgi and mysql just yet.
 
+#### About nginx
+
+> nginx [engine x] is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev  
+
+You can read all about it on the [nginx website](http://nginx.org/en/)  
+
 ## Goals
 What did i have in min when working on this project
 * A standalone, pre-configured, portable, stable version of the nginx web server for linux
@@ -18,8 +24,14 @@ Congratulations, your nginx server is up and running.
 Now go on and add your own files to the `html` directory.
 
 ## Usage
+
+#### The init script
 The init script works pretty much exactly like nginx init.d script on Ubuntu. In fact, it is a modified version of that file.
 ```Usage: ./nginx {start|stop|status|restart|reload|force-reload|upgrade|configtest}```
+
+#### Configuration
+If you need to change any of the default settings you can find `nginx.conf` under
+`usr/local/nginx/conf/` in the nginx-portable directory.
 
 ## Known issues
 * This package has only been tested on the 32bit server version of Ubuntu 12.04.
