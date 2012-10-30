@@ -1,4 +1,4 @@
 *.log
 **/*.log
 *.pid
-tmp/*
+tmp/**/*
