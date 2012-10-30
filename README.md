@@ -1,7 +1,7 @@
 nginx-portable
 ==============
 
-nginx-portable is a portable version of the nginx web server for linux
+nginx-portable is a portable version of the nginx web server for linux.  
 At this point in time the package only contains nginx-1.2.4, so no fastcgi and mysql just yet.
 
 ## Goals
@@ -14,8 +14,8 @@ What did i have in min when working on this project
 2. Run `cd nginx-portable` and then `sudo ./nginx start`
 3. Fire up your favorite browser and go to `http://localhost:8080`
 
-Congratulations, your nginx server is up and running.
-Now go on and add your own files to the html-directory.
+Congratulations, your nginx server is up and running.  
+Now go on and add your own files to the `html` directory.
 
 ## Usage
 The init script works pretty much exactly like nginx init.d script on Ubuntu. In fact, it is a modified version of that file.
