@@ -3,19 +3,19 @@ nginx-portable
 
 nginx-portable is a portable version of the nginx web server for linux
 
-## Goals
+### Goals
 What did i have in min when working on this project
 * A standalone, pre-configured, portable, stable version of the nginx web server for linux
 * Easily shipable together with or as base for other products
 
-## Installation
+### Installation
 1. Clone this repository
-2. Run `cd nginx-portable` and then `sudo nginx start`
+2. Run `cd nginx-portable` and then `sudo ./nginx start`
 3. Fire up your favorite browser and go to `http://localhost:8080`
 
 Congratulations, your nginx server is up and running.
 
-## Known issues
+### Known issues
 This package has only been tested on the 32bit server version of Ubuntu 12.04.
 
 ## Boring legal stuff
