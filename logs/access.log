@@ -1,0 +1,6 @@
+192.168.1.145 - - [29/Oct/2012:18:31:15 +0100] "GET / HTTP/1.1" 200 612 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:17.0) Gecko/17.0 Firefox/17.0"
+192.168.1.145 - - [29/Oct/2012:18:31:15 +0100] "GET /favicon.ico HTTP/1.1" 404 168 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:17.0) Gecko/17.0 Firefox/17.0"
+192.168.1.145 - - [29/Oct/2012:18:31:15 +0100] "GET /favicon.ico HTTP/1.1" 404 168 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:17.0) Gecko/17.0 Firefox/17.0"
+192.168.1.145 - - [29/Oct/2012:20:30:14 +0100] "GET / HTTP/1.1" 404 168 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:17.0) Gecko/17.0 Firefox/17.0"
+192.168.1.145 - - [29/Oct/2012:20:30:14 +0100] "GET /favicon.ico HTTP/1.1" 404 168 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:17.0) Gecko/17.0 Firefox/17.0"
+192.168.1.145 - - [29/Oct/2012:20:41:13 +0100] "GET / HTTP/1.1" 404 168 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:17.0) Gecko/17.0 Firefox/17.0"

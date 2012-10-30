@@ -1,0 +1,64 @@
+#!/bin/bash
+
+SCRIPTNAME=`readlink -f $0`
+BASEDIR=`dirname $SCRIPTNAME`
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+DESC=nginx
+NAME=nginx
+CONFFILE=$BASEDIR/usr/local/nginx/conf/nginx.conf
+DAEMON=$BASEDIR/bin/nginx
+DAEMON_ARGS="-c $CONFFILE"
+PIDFILE=$BASEDIR/logs/$NAME.pid
+
+#echo $SCRIPTNAME
+#echo $BASEDIR
+
+cd $BASEDIR;
+echo "We are now in `pwd`"
+
+start_daemon()
+{
+
+        echo "Starting $NAME..."
+        #`$DAEMON -g "pid $PIDFILE;"`
+        start-stop-daemon --start --pidfile $PIDFILE --chdir $BASEDIR --exec $DAEMON
+        RETVAL="$?"
+
+        sleep 1
+
+        case $RETVAL in
+                0) echo "$NAME running with pid `cat $PIDFILE`";;
+                1) echo "Could not start $NAME";;
+        esac
+}
+
+stop_daemon()
+{
+        echo "Stopping $NAME..."
+        `$DAEMON -s stop`
+        case $? in
+                0) echo "$NAME was stopped";;
+                1) echo "Something went wrong while stopping $NAME. It might not be running";;
+        esac
+}
+
+reload_config()
+{
+        kill -HUP $( cat $PIDFILE )
+}
+
+case $1 in
+        "start")
+                start_daemon;;
+
+        "stop")
+                stop_daemon;;
+
+        "restart")
+                stop_daemon
+                start_daemon
+                ;;
+        "reload")
+                reload_config;;
+
+esac

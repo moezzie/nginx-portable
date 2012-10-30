@@ -1,0 +1,77 @@
+2012/10/29 18:30:01 [emerg] 19483#0: open() "./logs/access.log" failed (2: No such file or directory)
+2012/10/29 18:30:23 [emerg] 19487#0: open() "./logs/access.log" failed (2: No such file or directory)
+2012/10/29 18:31:15 [error] 19503#0: *1 open() "./html/favicon.ico" failed (2: No such file or directory), client: 192.168.1.145, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.1.107"
+2012/10/29 18:31:15 [error] 19503#0: *1 open() "./html/favicon.ico" failed (2: No such file or directory), client: 192.168.1.145, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.1.107"
+2012/10/29 19:32:48 [emerg] 20414#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:32:48 [emerg] 20414#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:32:48 [emerg] 20414#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:32:48 [emerg] 20414#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:32:48 [emerg] 20414#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:32:48 [emerg] 20414#0: still could not bind()
+2012/10/29 19:49:35 [notice] 20504#0: signal process started
+2012/10/29 19:52:20 [emerg] 20521#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:52:20 [emerg] 20521#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:52:20 [emerg] 20521#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:52:20 [emerg] 20521#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:52:20 [emerg] 20521#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:52:20 [emerg] 20521#0: still could not bind()
+2012/10/29 19:53:22 [emerg] 20529#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:53:22 [emerg] 20529#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:53:22 [emerg] 20529#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:53:22 [emerg] 20529#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:53:22 [emerg] 20529#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:53:22 [emerg] 20529#0: still could not bind()
+2012/10/29 19:57:46 [emerg] 20538#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:57:46 [emerg] 20538#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:57:46 [emerg] 20538#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:57:46 [emerg] 20538#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:57:46 [emerg] 20538#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:57:46 [emerg] 20538#0: still could not bind()
+2012/10/29 19:58:14 [emerg] 20546#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:58:14 [emerg] 20546#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:58:14 [emerg] 20546#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:58:14 [emerg] 20546#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:58:14 [emerg] 20546#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 19:58:14 [emerg] 20546#0: still could not bind()
+2012/10/29 19:58:23 [notice] 20552#0: signal process started
+2012/10/29 20:00:09 [notice] 20569#0: signal process started
+2012/10/29 20:00:12 [emerg] 20575#0: unexpected end of parameter, expecting ";" in command line
+2012/10/29 20:00:40 [emerg] 20591#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 20:00:40 [emerg] 20591#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 20:00:40 [emerg] 20591#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 20:00:40 [emerg] 20591#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 20:00:40 [emerg] 20591#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 20:00:40 [emerg] 20591#0: still could not bind()
+2012/10/29 20:03:38 [notice] 20604#0: signal process started
+2012/10/29 20:03:38 [error] 20604#0: open() "./logs/nginx.pid" failed (2: No such file or directory)
+2012/10/29 20:03:38 [emerg] 20610#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 20:03:38 [emerg] 20610#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 20:03:38 [emerg] 20610#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 20:03:38 [emerg] 20610#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 20:03:38 [emerg] 20610#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2012/10/29 20:03:38 [emerg] 20610#0: still could not bind()
+2012/10/29 20:08:31 [notice] 20619#0: signal process started
+2012/10/29 20:08:31 [error] 20619#0: open() "./logs/nginx.pid" failed (2: No such file or directory)
+2012/10/29 20:09:01 [notice] 20638#0: signal process started
+2012/10/29 20:09:01 [error] 20638#0: open() "./logs/nginx.pid" failed (2: No such file or directory)
+2012/10/29 20:09:39 [notice] 20645#0: signal process started
+2012/10/29 20:09:39 [error] 20645#0: open() "./logs/nginx.pid" failed (2: No such file or directory)
+2012/10/29 20:09:52 [notice] 20654#0: signal process started
+2012/10/29 20:09:52 [error] 20654#0: open() "./logs/nginx.pid" failed (2: No such file or directory)
+2012/10/29 20:10:00 [notice] 20669#0: signal process started
+2012/10/29 20:12:55 [notice] 20676#0: signal process started
+2012/10/29 20:12:55 [error] 20676#0: open() "./logs/nginx.pid" failed (2: No such file or directory)
+2012/10/29 20:13:02 [notice] 20691#0: signal process started
+2012/10/29 20:13:13 [notice] 20710#0: signal process started
+2012/10/29 20:13:53 [notice] 20728#0: signal process started
+2012/10/29 20:20:03 [notice] 20751#0: signal process started
+2012/10/29 20:20:13 [notice] 20757#0: signal process started
+2012/10/29 20:20:13 [error] 20757#0: open() "./logs/nginx.pid" failed (2: No such file or directory)
+2012/10/29 20:30:14 [error] 20842#0: *1 "./html/index.html" is not found (2: No such file or directory), client: 192.168.1.145, server: localhost, request: "GET / HTTP/1.1", host: "192.168.1.107:8080"
+2012/10/29 20:30:14 [error] 20842#0: *1 open() "./html/favicon.ico" failed (2: No such file or directory), client: 192.168.1.145, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.1.107:8080"
+2012/10/29 20:41:13 [error] 20842#0: *2 "./html/index.html" is not found (2: No such file or directory), client: 192.168.1.145, server: localhost, request: "GET / HTTP/1.1", host: "192.168.1.107:8080"
+2012/10/29 20:43:58 [notice] 20890#0: signal process started
+2012/10/30 16:50:03 [notice] 21349#0: signal process started
+2012/10/30 16:50:28 [notice] 21365#0: signal process started
+2012/10/30 16:52:23 [notice] 21425#0: signal process started
+2012/10/30 16:58:13 [emerg] 21461#0: open() "/home/hostadmin/nginx-portable/usr/local/nginx/nginx.conf" failed (2: No such file or directory)
