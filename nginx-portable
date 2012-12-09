@@ -1,0 +1,59 @@
+#!/bin/sh
+
+CURRENTDIR=`pwd`
+BASEDIR=$(dirname `readlink -f $0`)
+NGINXDIR=$BASEDIR/bin
+PIDFILE=$BASEDIR/log/nginx.pid
+
+start_nginx()
+{
+	$NGINXDIR/nginx
+}
+
+stop_nginx()
+{
+	$NGINXDIR/nginx -s stop
+}
+
+reload_nginx()
+{
+	$NGINXDIR/nginx -s reload
+}
+
+restart_nginx()
+{
+	stop_nginx
+	start_nginx
+}
+
+cd $BASEDIR
+
+case $1 in
+        'start')
+
+                # Start nginx
+                start_nginx
+                ;;
+
+        'stop')
+
+                # Stop nginx
+                stop_nginx
+                ;;
+
+        'reload')
+		
+                # Reload nginx
+                reload_nginx	
+		;;
+
+        'restart')
+		
+                # Start nginx
+                restart_nginx
+		;;
+esac
+
+cd $CURRENTDIR
+
+exit 0
