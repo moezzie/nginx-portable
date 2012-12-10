@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASEDIR=$(dirname `readlink -f $0`)
+BASEDIR=$(cd "$(dirname "$0")"; pwd)
 TMPDIR=tmp
 NGINXV=nginx-1.2.5
 NGINXDIR=$NGINXV/
