@@ -11,7 +11,7 @@ cd $TMPDIR
 
 # Download nginx source
 if [ ! -f $NGINXV.tar.gz ]; then
-	wget http://nginx.org/download/$NGINXV.tar.gz
+	curl http://nginx.org/download/$NGINXV.tar.gz -o $NGINXV.tar.gz
 fi
 
 # Unpack nginx source
