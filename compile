@@ -2,7 +2,7 @@
 
 BASEDIR=$(cd "$(dirname "$0")"; pwd)
 TMPDIR=tmp
-NGINXV=nginx-1.2.5
+NGINXV=nginx-1.4.4
 NGINXDIR=$NGINXV/
 
 # Create and move into the tmp dirctory
