@@ -2,25 +2,25 @@
 
 CURRENTDIR=`pwd`
 BASEDIR=$(cd "$(dirname "$0")"; pwd)
-NGINXDIR=$BASEDIR/bin
-PIDFILE=$BASEDIR/log/nginx.pid
+NGINXDIR=$BASEDIR/nginx/bin
+PIDFILE=$BASEDIR/nginx/log/nginx.pid
 
-start_nginx()
+start()
 {
 	$NGINXDIR/nginx
 }
 
-stop_nginx()
+stop()
 {
 	$NGINXDIR/nginx -s stop
 }
 
-reload_nginx()
+reload()
 {
 	$NGINXDIR/nginx -s reload
 }
 
-restart_nginx()
+restart()
 {
 	stop_nginx
 	start_nginx
@@ -32,25 +32,25 @@ case $1 in
         'start')
 
                 # Start nginx
-                start_nginx
+                start
                 ;;
 
         'stop')
 
                 # Stop nginx
-                stop_nginx
+                stop
                 ;;
 
         'reload')
 		
                 # Reload nginx
-                reload_nginx	
+                reload	
 		;;
 
         'restart')
 		
-                # Start nginx
-                restart_nginx
+                # Retart nginx
+                restart
 		;;
 esac
 
