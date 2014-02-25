@@ -1,4 +1,4 @@
-LEMPO - Portable Linux Web-Server
+LEMPO - Portable Linux Web-Server [![Build Status](https://api.travis-ci.org/agmanix/lempo.png)](https://travis-ci.org/agmanix/lempo)[![Coverage Status](https://coveralls.io/repos/agmanix/lempo/badge.png)](https://coveralls.io/r/agmanix/lempo)
 ==============
 
 lempo is a portable version of the nginx, mysql, php for linux.  
