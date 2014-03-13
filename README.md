@@ -15,6 +15,10 @@ What did i have in min when working on this project
 * A standalone, pre-configured, portable, stable version of the nginx web server for linux
 * Easily distributable package together with or as base for other products
 
+## Dependencies
+On Ubuntu installing the following packages should provide all the files necessary to build nginx
+`sudo apt-get install build-essential libpcre3-dev libssl-dev`
+
 ## Getting started
 1. Clone this repository
 2. To compile a binary for your architecture issue `./compile`.
