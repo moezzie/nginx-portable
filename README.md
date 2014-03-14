@@ -2,7 +2,7 @@ nginx-portable
 ==============
 
 nginx-portable is a portable version of the nginx web server for linux.  
-At this point in time the package only contains nginx-1.2.4, so no fastcgi and mysql just yet.
+At this point in time the package only contains nginx-1.4.6, so no fastcgi and mysql just yet.
 
 #### About nginx
 
@@ -42,7 +42,7 @@ If you need to change any of the default values you can find `nginx.conf` under
 Additional modules and flags can be added to/removed from the appropriate line in the `compile` file.
 
 ## Known issues
-* This package has only been tested on the 32bit server version of Ubuntu 12.04.
+* This package has only been tested on Ubuntu Server 12.04 LTS 32bit and Ubuntu Server 13.10 64bit.
 * The compile script currently does not work correctly under Mac OSX. You can get it to run by hardcoding the scripts absolute path to `BASEDIR` in the compile script.
 
 If your find any bugs or have suggestions on how to improve nginx-portable, feel free to write up an issue here on GitHub or fork the repo to tinker with it yourself.
