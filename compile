@@ -2,7 +2,8 @@
 
 BASEDIR=$(cd "$(dirname "$0")"; pwd)
 TMPDIR=tmp
-NGINXV=nginx-1.6.0
+[[ "$1" == "--latest" ]] && NGINXV=nginx-1.7.3 || NGINXV=nginx-1.6.0
+echo "nginx version "$NGINXV" selected" 
 NGINXDIR=$NGINXV/
 
 # Create and move into the tmp dirctory
