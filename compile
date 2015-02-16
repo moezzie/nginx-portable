@@ -33,10 +33,10 @@ cd ./$NGINXDIR
 
 # Configure and make
 echo "Configuring executable."
-./configure --prefix=. --sbin-path=bin/ --conf-path=conf/nginx.conf --error-log-path=logs/error.log --http-client-body-temp-path=tmp/client_body_temp/ --http-proxy-temp-path=tmp/proxy_temp/ --http-fastcgi-temp-path=tmp/fastcgi_temp/ --http-uwsgi-temp-path=tmp/uwsgi_temp/ --http-scgi-temp-path=tmp/scgi_temp/ --with-ipv6 --with-http_ssl_module --with-http_gzip_static_module --with-http_stub_status_module --without-mail_pop3_module --without-mail_imap_module --without-mail_smtp_module --without-http_fastcgi_module > /dev/null
+./configure --prefix=. --sbin-path=bin/ --conf-path=conf/nginx.conf --error-log-path=logs/error.log --http-client-body-temp-path=tmp/client_body_temp/ --http-proxy-temp-path=tmp/proxy_temp/ --http-fastcgi-temp-path=tmp/fastcgi_temp/ --http-uwsgi-temp-path=tmp/uwsgi_temp/ --http-scgi-temp-path=tmp/scgi_temp/ --with-ipv6 --with-http_ssl_module --with-http_gzip_static_module --with-http_stub_status_module --without-mail_pop3_module --without-mail_imap_module --without-mail_smtp_module --without-http_fastcgi_module > ../../logs/compile.log
 
 echo "Building executable."
-make -s > /dev/null
+make >> ../../logs/compile.log
 
 # Move bin file into appropriate dir
 if [ ! -d $BASEDIR/bin/ ]; then
