@@ -2,7 +2,7 @@ nginx-portable
 ==============
 
 nginx-portable is a portable version of the nginx web server for linux.  
-At this point in time the package only contains nginx-1.4.6, so no fastcgi and mysql just yet.
+At this point in time the package only contains nginx-1.8.0 or nginx-1.9.4 with the --latest flag; so no fastcgi and mysql just yet.
 
 #### About nginx
 
@@ -11,13 +11,15 @@ At this point in time the package only contains nginx-1.4.6, so no fastcgi and m
 You can read all about it on the [nginx website](http://nginx.org/en/)  
 
 ## Goals
-What did i have in min when working on this project
+What is nginx-portable all about?
 * A standalone, pre-configured, portable, stable version of the nginx web server for linux
 * Easily distributable package together with or as base for other products
 
 ## Dependencies
 On Ubuntu installing the following packages should provide all the files necessary to build nginx
-`sudo apt-get install build-essential libpcre3-dev libssl-dev`
+```
+sudo apt-get install build-essential libpcre3-dev libssl-dev
+```
 
 ## Getting started
 1. Clone this repository
@@ -33,16 +35,19 @@ Now go on and add your own files to the `html` directory.
 
 #### The init script
 The init script works pretty much exactly like nginx init.d script on Ubuntu.
-```Usage: ./nginx-portable {start|stop|restart|reload}```
+```
+Usage: ./nginx-portable {start|stop|restart|reload}
+```
 
 #### Configuration
 If you need to change any of the default values you can find `nginx.conf` under
 `conf/nginx.conf` in the nginx-portable directory.
 
+### Customization
 Additional modules and flags can be added to/removed from the appropriate line in the `compile` file.
 
 ## Known issues
-* This package has only been tested on Ubuntu Server 12.04 LTS 32bit and Ubuntu Server 13.10 64bit.
+* This package has only been tested on Ubuntu Server 12.04 LTS 32bit, Ubuntu Server 13.10 64bit and Ubuntu Server 14.04 64bit.
 * The compile script currently does not work correctly under Mac OSX. You can get it to run by hardcoding the scripts absolute path to `BASEDIR` in the compile script.
 
 If your find any bugs or have suggestions on how to improve nginx-portable, feel free to write up an issue here on GitHub or fork the repo to tinker with it yourself.
