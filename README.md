@@ -18,7 +18,7 @@ What is nginx-portable all about?
 ## Dependencies
 On Ubuntu installing the following packages should provide all the files necessary to build nginx
 ```
-sudo apt-get install build-essential libpcre3-dev libssl-dev
+sudo apt-get install curl build-essential libpcre3-dev libssl-dev
 ```
 
 ## Getting started
