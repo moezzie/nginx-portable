@@ -2,7 +2,7 @@
 
 BASEDIR=$(cd "$(dirname "$0")"; pwd)
 TMPDIR=tmp
-[[ "$1" == "--latest" ]] && NGINXV=nginx-1.11.4 || NGINXV=nginx-1.10.1
+[[ "$1" == "--latest" ]] && NGINXV=nginx-1.11.5 || NGINXV=nginx-1.10.1
 echo "nginx version "$NGINXV" selected" 
 NGINXDIR=$NGINXV/
 
