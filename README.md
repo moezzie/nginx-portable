@@ -2,7 +2,7 @@ nginx-portable
 ==============
 
 nginx-portable is a portable version of the nginx web server for linux.  
-At this point in time the package only contains nginx-1.8.1 or nginx-1.9.12 with the --latest flag; so no fastcgi and mysql just yet.
+At this point in time the package contains nginx-1.10.1 or nginx-1.11.5 with the --latest flag; so no fastcgi and mysql just yet.
 
 #### About nginx
 
