@@ -26,6 +26,11 @@ restart_nginx()
 	start_nginx
 }
 
+test_nginx()
+{
+	$NGINXDIR/nginx -t
+}
+
 cd $BASEDIR
 
 case $1 in
@@ -51,6 +56,12 @@ case $1 in
 		
                 # Start nginx
                 restart_nginx
+		;;
+		
+        'test')
+		
+                # Test nginx
+                test_nginx
 		;;
 esac
 
