@@ -36,7 +36,7 @@ Now go on and add your own files to the `html` directory.
 #### The init script
 The init script works pretty much exactly like nginx init.d script on Ubuntu.
 ```
-Usage: ./nginx-portable {start|stop|restart|reload}
+Usage: ./nginx-portable {start|stop|restart|reload|test}
 ```
 
 #### Configuration
