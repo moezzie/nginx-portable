@@ -1,14 +1,14 @@
 #!/bin/bash
 
-BASEDIR=$(cd "$(dirname "$0")"; pwd)
+BASEDIR=$(cd "$(dirname "$0")" || exit; pwd)
 TMPDIR=tmp
-[[ "$1" == "--latest" ]] && NGINXV=nginx-1.11.8 || NGINXV=nginx-1.10.2
-echo "nginx version "$NGINXV" selected" 
+[[ "$1" == "--latest" ]] && NGINXV=nginx-1.21.1 || NGINXV=nginx-1.20.1
+echo "nginx version $NGINXV selected" 
 NGINXDIR=$NGINXV/
 
 # Create and move into the tmp dirctory
 mkdir -p $TMPDIR
-cd $TMPDIR
+cd $TMPDIR || { echo "Failure to cd tmp dir"; exit 1; }
 
 # Download nginx source
 
@@ -29,7 +29,13 @@ fi
 echo "Extracting file."
 tar zxf ./$NGINXV.tar.gz
 
-cd ./$NGINXDIR
+cd ./$NGINXDIR || { echo "Failure to cd nginx dir"; exit 1; }
+
+# Security : Hide Server Information
+sed -i 's@"nginx/"@"-/"@g' src/core/nginx.h
+sed -i 's@r->headers_out.server == NULL@0@g' src/http/ngx_http_header_filter_module.c
+sed -i 's@r->headers_out.server == NULL@0@g' src/http/v2/ngx_http_v2_filter_module.c
+sed -i 's@<hr><center>nginx</center>@@g' src/http/ngx_http_special_response.c
 
 # Configure and make
 echo "Configuring executable."
@@ -39,14 +45,19 @@ echo "Building executable."
 make >> ../../logs/compile.log
 
 # Move bin file into appropriate dir
-if [ ! -d $BASEDIR/bin/ ]; then
-	mkdir $BASEDIR/bin
+if [ ! -d "$BASEDIR"/bin/ ]; then
+	mkdir "$BASEDIR"/bin
 fi
 
-cp -f objs/nginx $BASEDIR/bin/
+cp -f objs/nginx "$BASEDIR"/bin/
 
-cd $BASEDIR
+# Permission to run script & nginx bin
+chmod a+x nginx-portable
+chmod a+x bin/nginx
+
+cd "$BASEDIR" || { echo "Failure to cd basedir"; exit 1; }
+
 
 # Remove the temporary directory
 echo "Cleaning up."
-rm -r $TMPDIR/$NGINXV && rm -r $TMPDIR/$NGINXV.tar.gz
+rm -r ${TMPDIR:?}/$NGINXV && rm -r ${TMPDIR:?}/$NGINXV.tar.gz
